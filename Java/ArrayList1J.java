@@ -2,11 +2,15 @@ package Java;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 /*
 You are given an array of integers, and you need to find the two numbers that add up to a given target value. 
 Write a function that takes in an array of integers and a target value, 
 and returns the indices of the two numbers that add up to the target value. If no such pair exists, return null.
  */
+
+ //Method 1
 public class ArrayList1J {
 
  public static int[] twoSum(int[] nums, int target) {
@@ -21,6 +25,8 @@ public class ArrayList1J {
     return null;
     
  }
+
+ //Method 2
 
  public static int[] findTwoSum(int[] nums, int target){
     List<Integer> indices = new ArrayList<>();
