@@ -62,19 +62,22 @@ class RomanToIntHash{
         m.put('I', 1);
         m.put('V', 5);
         m.put('X', 10);
-        m.put('L', 100);
-        m.put('C', 500);
+        m.put('L', 50);
+        m.put('C', 100);
+        m.put('D', 500);
         m.put('M', 1000);
         int answer = 0;
 
         for(int i = 0; i<s.length();i++ ){
-            if(i<s.length()-1 && m.get(s.charAt(i)) < m.get(s.charAt(i+1))){
+            if(i < s.length()-1 && m.get(s.charAt(i)) < m.get(s.charAt(i+1))){ 
+                //i must be < s.length because it ensures there is alwyas a character to compare to. 
+                // Without -1 an out-of-bounds error when at the last character will occur because there would be no nextCHar to compare to. 
 
                 answer -= m.get(s.charAt(i));
         } else {
             answer +=m.get(s.charAt(i));
             }
-            
+
         } return answer;
 
     }
