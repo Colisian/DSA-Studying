@@ -30,9 +30,9 @@ public class ArrayList1J {
  //Method 2
 
  public static int[] findTwoSum(int[] nums, int target){
-    List<Integer> indices = new ArrayList<>(); // create array list
+    List<Integer> indices = new ArrayList<>(); // create array list called indices
     for(int i = 0; i < nums.length; i++ ){
-        int complement  = target - nums[i]; //The for loop will find the compliemnt of each number in the arraylist
+        int complement  = target - nums[i]; //The for loop will find the compliemnt (which is the value of the target value from the number at index i) of each number in the arraylist
 
         if (indices.contains(complement)){ //checks if compliemnt is in ArraryList. 
             int index = indices.indexOf(complement);

@@ -32,7 +32,7 @@ class Solution1 {
 
 
 //Below method is less efficient with time complex. of O(n^2) becuase it iterates through all indexes
-//each time
+//each time in a nested for loop (avoid nesting for loops)
 class Solution2 {
     int[] getCumulativeSum (int[] arr) {
 
