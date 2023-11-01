@@ -1,21 +1,38 @@
 0(1): Constant Time - Looking up a  single element, if an integer is even or odd. 
 
-0(log n): Logarithmic - Fiding an item in a sorted array with a binary search.
+0(log n): Logarithmic - Finding an item in a sorted array with a binary search.
 
 0(n): Linear - Searching an unsorted array for a specific value.
 
-0(n log n): Log-Linear - Complex sorting algorthims like heap and merge sort
+0(n log n): Log-Linear - Complex sorting algorithms like heap and merge sort
 
-0(n^2): Quadratic - Simple sorting algoritms such as bubble sort, selection sort and insertion sort.
+0(n^2): Quadratic - Simple sorting algorithms such as bubble sort, selection sort and insertion sort.
 
 The measurement of performance for an algorithms is dependent on the input data and varies as the input data grows.
 
 
+-----------------------------------------------------------------------------------------------------------------
+Common Algorithms
+
+Searching - Finding a specific data in  a structure, like a substring in a string.
+
+Sorting - Take a dataset and apply a sort order to it.
+
+Computational - algorithm derives a new set of data from an existing set of input data. Calculate if a number is a prime number or
+converting a measurement from one scale to another.
+
+Collection Algorithms - Working with, navigating, manipulating collections of data , such as count specific items navigate among data elements, filter out data.
 
 
-An algoritm that is deterministic always produces the same outputs from a given set of inputs.
+EUCLID'S AlGORITHM 
+Find the GCD of two integers: Example GCD of 20 and 8 is 4, because 8/4 is 2, and 20/4 is 5.
+For two integers and b where A > B, divide A by B. If remainder, r, is 0 then stop: GCD is B. 
+Otherwise set A to B and B to r and repeat step one. 
 
-Euclid's algoritm for Least Common Denomintator classifies as exact/deterministic.
 
-A computational algoritm derices a new set of data from an existing set of input data.
+An algorithm that is deterministic always produces the same outputs from a given set of inputs.
+
+Euclid's algorithm for Least Common Denominator classifies as exact/deterministic.
+
+
 
