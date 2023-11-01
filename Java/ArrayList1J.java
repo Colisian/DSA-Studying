@@ -1,5 +1,6 @@
 package Java;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -27,7 +28,7 @@ public class ArrayList1J {
     
  }
 
- //Method 2
+ //Method  (Throws a run time error avoid this method)
 
  public static int[] findTwoSum(int[] nums, int target){
     List<Integer> indices = new ArrayList<>(); // create array list called indices
@@ -56,4 +57,18 @@ public class ArrayList1J {
  * 
  */
 
+ //Method 3 HashMap method
+ 
+ public static int[] mapTwoSum(int[] nums, int target){
+    HashMap<Integer,Integer> index = new HashMap<>(); //Create HashMap call index
+    for(int i = 0; i < nums.length; i++ ){
+        int complement = target - nums[i];
+
+        if(index.containsKey(complement)){ // check to see if the compliment is within the array 
+            return new int[]{index.get(complement), i}; //return array of 
+        }
+        index.put(nums[i], i);
+    }
+    return null;
+ }
 }
