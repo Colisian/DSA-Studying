@@ -1,0 +1,21 @@
+0(1): Constant Time - Looking up a  single element, if an integer is even or odd. 
+
+0(log n): Logarithmic - Fiding an item in a sorted array with a binary search.
+
+0(n): Linear - Searching an unsorted array for a specific value.
+
+0(n log n): Log-Linear - Complex sorting algorthims like heap and merge sort
+
+0(n^2): Quadratic - Simple sorting algoritms such as bubble sort, selection sort and insertion sort.
+
+The measurement of performance for an algorithms is dependent on the input data and varies as the input data grows.
+
+
+
+
+An algoritm that is deterministic always produces the same outputs from a given set of inputs.
+
+Euclid's algoritm for Least Common Denomintator classifies as exact/deterministic.
+
+A computational algoritm derices a new set of data from an existing set of input data.
+
