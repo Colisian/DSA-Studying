@@ -6,8 +6,8 @@ public class Palindrome {
         if(x < 0){ //Negative numbers are never palindrome
             return false;
         }
-        int reverse = 0; //storing the value we will continue to edit
-        int holder = x; //Holder will be the value of the number entrered with the last digit removed after each loop 
+        int reverse = 0; //storing the value we will reflect the inputted number 
+        int holder = x; //Holder will be the value of the number enterring the loop with the last digit removed from the previous loop 
 
         while(holder != 0){ //Only single integer so while loop will suffice
             int lastDigit = holder % 10; // this will isolate the last digit of of the number entered (remainder) 
