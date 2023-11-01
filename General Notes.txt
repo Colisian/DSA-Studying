@@ -13,6 +13,17 @@ Big O basics
 
 The measurement of performance for an algorithms is dependent on the input data and varies as the input data grows.
 
+-----------------------------------------------------------------------------------------------------------------
+Data Structures Basics
+Arrays
+
+
+LinkedLists
+
+Stacks and Queues
+
+HashTables
+
 
 -----------------------------------------------------------------------------------------------------------------
 Common Algorithms
@@ -57,13 +68,14 @@ class gcd{
 
 
 
-
-
-
-
 An algorithm that is deterministic always produces the same outputs from a given set of inputs.
 
-Euclid's algorithm for Least Common Denominator classifies as exact/deterministic.
+Euclid's algorithm for Greatest Common Denominator classifies as exact/deterministic.
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
 
 
 
