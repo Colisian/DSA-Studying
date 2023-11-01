@@ -1,3 +1,6 @@
+-----------------------------------------------------------------------------------------------------------------
+Big O basics
+
 0(1): Constant Time - Looking up a  single element, if an integer is even or odd. 
 
 0(log n): Logarithmic - Finding an item in a sorted array with a binary search.
@@ -27,7 +30,22 @@ Collection Algorithms - Working with, navigating, manipulating collections of da
 EUCLID'S AlGORITHM 
 Find the GCD of two integers: Example GCD of 20 and 8 is 4, because 8/4 is 2, and 20/4 is 5.
 For two integers and b where A > B, divide A by B. If remainder, r, is 0 then stop: GCD is B. 
-Otherwise set A to B and B to r and repeat step one. 
+Otherwise set A to B and B to r and repeat step one until r is 0. 
+
+in python
+def gcd(a,b):
+    while(b!=0):
+        t = a 
+        a = b 
+        b = t % b
+    return a 
+
+in java 
+
+
+
+
+
 
 
 An algorithm that is deterministic always produces the same outputs from a given set of inputs.
