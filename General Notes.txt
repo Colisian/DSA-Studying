@@ -14,18 +14,7 @@ Big O basics
 The measurement of performance for an algorithms is dependent on the input data and varies as the input data grows.
 
 -----------------------------------------------------------------------------------------------------------------
-Data Structures Basics
-Arrays
 
-
-LinkedLists
-
-Stacks and Queues
-
-HashTables
-
-
------------------------------------------------------------------------------------------------------------------
 Common Algorithms
 
 Searching - Finding a specific data in  a structure, like a substring in a string.
@@ -46,24 +35,23 @@ Otherwise set A to B and B to r and repeat step one until r is 0.
 in python
 def gcd(a,b):
     while(b!=0):
-        t = a 
+        temp = a 
         a = b 
-        b = t % b
+        b = temp % b
     return a 
 
 in java 
-class gcd{
-    int a;
-    int b;
-    int t;
-
+class GCD {
+    public static int findGcd(int a, int b){
+    
     while(b! = 0){
-        t = a;
+        int temp = a;
         a = b;
-        b = t % b;
+        b = temp % b;
     }
     return a
 
+    }
 }
 
 
