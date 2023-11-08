@@ -39,7 +39,7 @@ public class ArrayList1J {
             int index = indices.indexOf(complement);
             return new int[]{index,i}; //returns an array that holds the index of the two numbers, curly brackets after square brackets indicate that
         }
-        indices.add(i); //if no complient is found adds element to indices ArrayList to confirm that a number has been processed
+        indices.add(i); //if no compliment is found adds element to indices ArrayList to confirm that a number has been processed
     }
     return null;
 
