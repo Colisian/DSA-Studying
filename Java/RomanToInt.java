@@ -70,7 +70,7 @@ class RomanToIntHash{
 
         for(int i = 0; i<s.length();i++ ){
             if(i < s.length()-1 && m.get(s.charAt(i)) < m.get(s.charAt(i+1))){ 
-                //i must be < s.length because it ensures there is alwyas a character to compare to. 
+                //i must be < s.length because it ensures there is always a character to compare to. 
                 // Without -1 an out-of-bounds error when at the last character will occur because there would be no nextCHar to compare to. 
                 /*
                  Another option could be 
