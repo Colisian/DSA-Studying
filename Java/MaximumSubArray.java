@@ -29,13 +29,13 @@ class Solution1 { //Kadane's Algorithm
         int maxCount = nums[0] ; //sets the initial maximum subarray to the value of the first element. 
         int currentCount = nums[0] ; // Allows starting point for algorithm to begin it's calculations 
         for (int i = 1; i < nums.length ; i++){ //because nums is initiated to start at the first index of nums loop should start at the next value.
-            currentCount = Math.max(nums[i],currentCount + nums[i] ); // choose maximum between currentSum and current sum + integer a that element.
-            maxCount = Math.max(currentCount,maxCount ); //maxCount will either stay the same or update to be currentCount if it is greater than the maxSum
+            currentCount = Math.max(nums[i],currentCount + nums[i] ); // choose maximum between the integer at that index in nums array and current sum + integer a that element.
+            maxCount = Math.max(currentCount,maxCount ); //maxCount will either stay the same or update to be the currentCount calculated in the above equation if it is greater than the maxSum
 
             // At each step the system will choose the maximum between the currentElement (i) and the sum of the integer at that element and the maxSum 
         }
 
-        return maxCount;
+        return maxCount; // returns total sum
 
     }
 }

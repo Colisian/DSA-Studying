@@ -10,7 +10,7 @@ Insert or delete item at end: O(1)
 LinkedLists - Linear collection of data elements called Nodes. 
 Contain refence to the next node in the list. First item is head and last is tail that points to Node.
 
-Single LL: each data item only knows about it next neihbor
+Single LL: each data item only knows about it next neighbor
 Double LL: each data has a refence to previous and next items
 
 Elements can be easily inserted and remived and underlying memory does not need to be reorginized (Indiviudal nodes do not need to be stored continously)
@@ -20,8 +20,12 @@ Item lookup is O(n). Achieving operations are done by reorganizing nodes.
 
 Stacks and Queues
 
+Stack- Last in (push or append) First out (pop) (constant time operation). Used to parse expression statements. And backtracing (back button)
+Queue 0 First in First out. Order processing, or message processing.
 
-HashTables
+
+HashTables - also called (dictionaries) uses keys to compute an index and map key to a value. Hash function assigns each key to the value.
+
 
 
 -----------------------------------------------------------------------------------------------------------------
