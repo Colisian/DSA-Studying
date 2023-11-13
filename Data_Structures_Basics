@@ -1,5 +1,8 @@
 Data Structures Basics
 
+The efficient use of algorithms depends on the scenario, such as a task list that needs to be sorted and the structure type such as an array.
+
+
 Arrays - Collection of elements identified by index or key.
 
 Calcualte item index: O(1)
@@ -7,16 +10,16 @@ Insert or delete item at begining or middle O(n)
 Insert or delete item at end: O(1)
 
 
-LinkedLists - Linear collection of data elements called Nodes. 
-Contain refence to the next node in the list. First item is head and last is tail that points to Node.
+LinkedLists - Linear collection of data elements called Nodes. Faster than arrays to iterate sequentially.
+Contain reference to the next node in the list. First item is head and last is tail that points to Node.
 
 Single LL: each data item only knows about it next neighbor
-Double LL: each data has a refence to previous and next items
+Double LL: each data has a reference to previous and next items
 
-Elements can be easily inserted and remived and underlying memory does not need to be reorginized (Indiviudal nodes do not need to be stored continously)
+Elements can be easily inserted and removed and underlying memory does not need to be reorginized (Indiviudal nodes do not need to be stored continously)
 
 Item lookup is O(n). Achieving operations are done by reorganizing nodes.
-
+Underlying memory doe not need to be contiguous.
 
 Stacks and Queues
 
@@ -26,17 +29,24 @@ Queue 0 First in First out. Order processing, or message processing.
 
 HashTables - also called (dictionaries) uses keys to compute an index and map key to a value. Hash function assigns each key to the value.
 
+A hash table is an associative array where a hash function uses a key to compute an index value and to map to the data value.
+
+-----------------------------------------------------------------------------------------------------------------
+Recursion
+
+
+
 
 
 -----------------------------------------------------------------------------------------------------------------
 Problems to Try
 
-Two Sum
-Roman to Integer
-Palindrome Number
-Maximum Subarray
-Remove Element
-Contains Duplicate
+Two Sum - Done
+Roman to Integer - Done
+Palindrome Number - DOne
+Maximum Subarray - Done
+Remove Element 
+Contains Duplicate 
 Add Two Numbers
 Majority Element
 Remove Duplicates from Sorted Array
