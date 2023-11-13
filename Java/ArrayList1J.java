@@ -65,9 +65,9 @@ public class ArrayList1J {
         int complement = target - nums[i];
 
         if(index.containsKey(complement)){ // check to see if the compliment is within the array 
-            return new int[]{index.get(complement), i}; //return array of 
+            return new int[]{index.get(complement), i}; //if value is in array list return a new array that has the index of the current number and differences
         }
-        index.put(nums[i], i);
+        index.put(nums[i], i); //otherwise add the index of the current number to the List
     }
     return null;
  }

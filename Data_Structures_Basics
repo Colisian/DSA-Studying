@@ -34,11 +34,41 @@ A hash table is an associative array where a hash function uses a key to compute
 -----------------------------------------------------------------------------------------------------------------
 Recursion
 
+The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a recursive function.
+Example of use case is searching in a directory that has multiple directories for a specific file.
+
+1.Recursive functions need a breaking condition.
+2.Each time the function is called the old agruments are saved using a Stack Data Struct.
+
+ex.
+function countdown(x){
+    if (x == 0)
+        print("done")
+    return 
+    else
+        print(x,"...")
+        countdown(x-1)
+}
+countdown(4)
 
 
 
 
 -----------------------------------------------------------------------------------------------------------------
+Important Algorithms to know
+
+Sorting Algorithms: Bubble Sort, Insetion Sort, Heap Sort etc
+Searching Algorithms: Linear Search, Binary Search
+String Algorithms: Rabin Karp Algorithm, KMP Algorithm, Z Algo
+Divide and Conquer: Quick Sort, Merge Sort, Matrix Multiplication 
+Recursion & Backtracking: N-queens, Rat in a maze, Sudoku
+Greedy Algorithms: Job Sequencing Problem, Prims Algo for MST, Fractional Knapsack problem
+Dynamic Programming: 0/1 Knapsack Problem, Longest Palindromic subsequence, Longest common subsequence
+Tree-Related Algo: in-order, pre-order, post-oder, level-order
+Graph Algorithms: Breadth first search, depth first search, Dijkstra Algo, Floyd Warshall Algo, bellman-Forst Algo, Prim's alog, Kruskal's algo 
+Sliding Window: Fixed size sliding window, Variable-size sliding window.
+
+
 Problems to Try
 
 Two Sum - Done
