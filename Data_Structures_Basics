@@ -51,7 +51,7 @@ function countdown(x){
 }
 countdown(4)
 
-
+When executing a return statement in a recursive function the program returns to the statement after the function call was made. 
 
 
 -----------------------------------------------------------------------------------------------------------------
