@@ -39,14 +39,14 @@ public class RomanToInt {
         }
     }
     public int romanToInt(String s) {
-        int sum = 0;
-        int currentChar = translate(s.charAt(0));
+        int sum = 0; //variable to store the sum over iterations
+        int currentChar = translate(s.charAt(0)); //currentCharacter starts at index 0 
 
-        for(int i = 1; i<s.length(); i++){ //i = 1 here because we are comparing the current value  to the next char so we are starting the loop ar index 1 and comparing char at 0 and 1. 
-            int nextChar = translate(s.charAt(i));
+        for(int i = 1; i<s.length(); i++){ //i = 1 here because we are comparing the current value  to the next char so we are starting the loop at index 1 and comparing char at 0 and 1. 
+            int nextChar = translate(s.charAt(i)); //translate turns character from char to int
             if(currentChar < nextChar)
-                sum -= currentChar;
-            else sum += currentChar;
+                sum -= currentChar; //if the next character is less than the previous character such like VI (5 and 1) then the value is 5 minus 1 which is four
+            else sum += currentChar; // if the next character is equal or more  VX (5 and 10) value is 15
         currentChar = nextChar;
         }
         sum += currentChar;
