@@ -52,8 +52,20 @@ function countdown(x){
 countdown(4)
 
 When executing a return statement in a recursive function the program returns to the statement after the function call was made. 
+The algorithmic steps for implementing recursion in a function are as follows:
+
+1 - Define a base case: Identify the simplest case for which the solution is known or trivial. This is the stopping condition for the recursion, as it prevents the function from infinitely calling itself.
+
+2 - Define a recursive case: Define the problem in terms of smaller subproblems. Break the problem down into smaller versions of itself, and call the function recursively to solve each subproblem.
+
+3 - Ensure the recursion terminates: Make sure that the recursive function eventually reaches the base case, and does not enter an infinite loop.
+
+step4 - Combine the solutions: Combine the solutions of the subproblems to solve the original problem.
 
 
+
+What is the difference between direct and indirect recursion? 
+A function fun is called direct recursive if it calls the same function fun. A function fun is called indirect recursive if it calls another function say fun_new and fun_new calls fun directly or indirectly.
 -----------------------------------------------------------------------------------------------------------------
 Important Algorithms to know
 

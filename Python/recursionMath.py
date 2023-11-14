@@ -1,12 +1,20 @@
 
 
-
-
 def power(num, pwr):
     if pwr == 0:
         return 1
     else:
-        return num * power(num, pwr-1) #if num is 5 and pwr is 3 first loop will be 
+        return num * power(num, pwr-1) 
+
+#power(2,3) = 2 * power(2,2)
+#           = 2 *(2* power(2,1))
+#           = 2 * (2* ( 2 * power(2,0)))
+#           = 2 *(2* (2 * 1))
+#
+#
+#
+#
+#
 
 
 def factorial(num):
