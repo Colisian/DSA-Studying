@@ -1,4 +1,5 @@
------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Big O basics
 
 0(1): Constant Time - Looking up a  single element, if an integer is even or odd. 
@@ -13,18 +14,61 @@ Big O basics
 
 The measurement of performance for an algorithms is dependent on the input data and varies as the input data grows.
 
------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Common Algorithms
 
 Searching - Finding a specific data in  a structure, like a substring in a string.
 
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Sorting - Take a dataset and apply a sort order to it.
+Bubble Sorting ()
+Iterating through an array if the next value is less than the previous the values will swap.
+performance: O(n^2) (generally nested for loops are n^2).
+
+
+
+Merge Sort (Recursion)
+divide and conquer algorithmBreaks dataset into individual pieces and merges them
+great for large sets of data
+performance: O(n log n)
+Imagine two separate arrays that are sorted and one empty array that will hold the values. Iterate through both of them.
+Compare both values from the two arrays at the first index to each other, the smaller one will get put into the empty array at the first index.
+Then advance the index of the array we just put the last value in to the next index, and compare to the first index of the other array.
+
+In practice when we only have one array we do this by first breaking down a single array into multiple arrays that are only one element each (sorted).
+Then merge the single element arrays.
+
+
+Quick Sort (Recursion)
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 Computational - algorithm derives a new set of data from an existing set of input data. Calculate if a number is a prime number or
 converting a measurement from one scale to another.
 
 Collection Algorithms - Working with, navigating, manipulating collections of data , such as count specific items navigate among data elements, filter out data.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 EUCLID'S AlGORITHM 
