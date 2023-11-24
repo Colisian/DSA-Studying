@@ -20,6 +20,20 @@ Common Algorithms
 
 Searching - Finding a specific data in  a structure, like a substring in a string.
 
+Unordered List Searching
+performance: O(n) because as items are added to the list it increases the time by one step 
+
+
+
+Ordered List Searching
+Can use a binary search. Start up with two indexes at the beginning and end of the list. Then calculate the midpoint and check to see if that value is the index.
+If the number we want is not the midpoint we check to see if the value we want is higher or low and disregard the values that are not in that range.
+Then we restart the binary search again.
+performance: O(log n)
+
+
+Determine if a list is sorted
+performance O(n)
 
 
 
@@ -30,6 +44,7 @@ Searching - Finding a specific data in  a structure, like a substring in a strin
 Sorting - Take a dataset and apply a sort order to it.
 Bubble Sorting ()
 Iterating through an array if the next value is less than the previous the values will swap.
+With a bubble sort, two values are compared to each other incrementally, the largest value is shifted until it is at the top.
 performance: O(n^2) (generally nested for loops are n^2).
 
 
@@ -48,7 +63,18 @@ Then merge the single element arrays.
 
 Quick Sort (Recursion)
 
+Divide and Conquer, recursive algo.  
+performance: O(n log n), worst case O(n^2)
 
+Operates in place on the data. A quick sort sets a pit point to partition a data set. High and low index values are then used to rearrange data values that are on the "wrong" side of the pivot point.
+
+Value at first index becomes the Pivot value. 
+Increment from lower index pivot value each time there is a value less than te pivot until there is a value that is higher, and decrement from last index until there is a value that is lower than the higher value and swap it.
+Where two indexes cross each other is where the index is split. Continue to split. 
+
+After one recursive step the pivot element is placed at its correct array location.
+
+All work is done in the partition steps.
 
 
 
