@@ -6,7 +6,7 @@ The efficient use of algorithms depends on the scenario, such as a task list tha
 Arrays - Collection of elements identified by index or key.
 
 Calcualte item index: O(1)
-Insert or delete item at begining or middle O(n)
+Insert or delete item at beginning or middle O(n)
 Insert or delete item at end: O(1)
 
 
@@ -27,9 +27,40 @@ Stack- Last in (push or append) First out (pop) (constant time operation). Used 
 Queue 0 First in First out. Order processing, or message processing.
 
 
-HashTables - also called (dictionaries) uses keys to compute an index and map key to a value. Hash function assigns each key to the value.
-
+HashTables - 
+also called (dictionaries) uses keys to compute an index and map key to a value. Hash function assigns each key to the value.
 A hash table is an associative array where a hash function uses a key to compute an index value and to map to the data value.
+
+when you add a redundant entry to a hash table the new entry replaces the old one.
+
+
+
+
+for item in items:
+  if (item in counter.keys():
+  counter[item] +=1
+  else:
+  counter[item]=1 //creates a dictionary entry for item and sets its value to one.
+
+
+items = ["apple", "pear", "orange", "banana", "apple","orange", "apple", "pear", "banana", "orange","apple", "kiwi", "pear", "apple", "orange"]
+ 
+filter = dict()
+   for key in items: // The code in line 3 performs a loop over each defined item and then adds it to the hash table.
+       filter[key] = 0
+
+ result = set(filter.keys())
+       print(result)
+
+
+def find_max(items):
+     if len(items) == 1:
+         return items[0]
+ op1 = items[0]
+ print(op1)
+ op2 = find_max(items[1:]) //Recursion occurs when a function calls itself. With this code snippet, a function find_max is defined and that function is         
+                            called within itself at line 6. This repeats the process of the function.
+ print(op1, op2)
 
 -----------------------------------------------------------------------------------------------------------------
 Recursion
