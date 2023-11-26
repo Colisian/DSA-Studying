@@ -16,7 +16,7 @@ Explanation: Your function should return k = 2, with the first two elements of n
 It does not matter what you leave beyond the returned k (hence they are underscores).
  */
 
-public class removeElement {
+class soltion {
     public int removeElement(int[] nums, int val) {
         
         int count = 0; // counter to return each value removed
