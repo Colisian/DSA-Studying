@@ -26,28 +26,57 @@ class Solution {
 }
 
 /**
- * This soultion uses a HashMap
+ * This solution uses a HashMap
+ * Common operations include: 
+ * Insertion: hashMap.put(key, value); (O(1))
+ * Retrieval: value = hashMap.get(key); (O(1))
+ * Removal: hashMap.remove(key); (O(1))
+ * Checking Existence: boolean exists = hashMap.containsKey(key);
+ * Size: int size = hashMap.size();
+ * Iterate keys: for (KeyType key : hashMap.keySet()) {Iterate over keys}
+ * Iterate values: for (ValueType value : hashMap.values()) {}
+ * Check if empty: boolean isEmpty = hashMap.isEmpty();
+ * Replace Value: hashMap.replace(key, newValue);
+ * Merge with another map: hashMap.putAll(anotherMap);
+ * 
  */
 
  class Solution2{
         public boolean containsDuplicate(int[] nums) {
-            HashMap<Integer, Integer> map = new HashMap<>();
+            HashMap<Integer, Integer> map = new HashMap<>(); //Create HashMap to store elements in array as keys and occurrences as values
 
-            for (int i = 0; i < nums.length; i++) {
-                if (map.containsKey(nums[i])) {
+            for (int i = 0; i < nums.length; i++) { //Iterate through nums array
+                if (map.containsKey(nums[i])) { //If the value is found in the HashMap loop will be true
                     
                     return true;
                     
                 }
-                map.put(nums[i], 1);
+                map.put(nums[i], 1); //Otherwise store each unique value in the hashmap with the as a key which and a value of 1
             }
             return false;
         }
          
  }
+ /* for an example array like [3,2,3,1]
+  First iteration 
+  {3=1}
+
+  Second iteration
+  {3=1, 2=1}
+
+  Third iteration, no change because 3 is not a unique key anymore
+  {3=1, 2=1}
+
+  Fourth iteration
+  {3=1, 2=1, 1=1}
+  */
+
+
+
 
  /*
-  * This method uses a HashSet
+  * This method uses a HashSet, which stores a collection of unique elements, constant time performance. 
+  * uses basic operations such as add, remove, and contains
   */
 
   class Solution3{
