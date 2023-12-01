@@ -40,8 +40,8 @@ public class AddTwoNumbers {
                 l2 = l2.next; //move to next node in l2
             }
             carryOver = sum / 10; //update the carryOver value for the next iteration. If Sum is less than 10 no carryOver, if carryOver is 10 or greater the carryOver is 1 or more
-         tail.next = new ListNode( sum % 10);//ensures that the the new node of the linked list is a single digit
-         tail = tail.next; //move the tail pointer to the new node
+         tail.next = new ListNode( sum % 10);//ensures that the new node of the linked list is a single digit
+         tail = tail.next; //move the tail pointer to the new node. tail.next now points to the newly added node 
         }
         // if there is a remaining carryOver after traversing both lists create an addition node for it 
         if (carryOver > 0) {
