@@ -50,13 +50,13 @@ class Solution2{
         int element = 0;
 
         for (int i = 0; i < nums.length; i++) {
-            if (count == 0) { //if the value does 
-                element = nums[i]; //set element is equal to the value of nums
+            if (count == 0) { //if the count is equal to zero
+                element = nums[i]; //set element as the value at that index in nums
             }
-            if (count == element) { //if the counter is equal to the element 
+            if (nums[i] == element) { //if the counter is equal to the element 
                 count++; //increase the counter by one
                 
-            }else count --; //if the next value in the array is not equally to the element decrement count back.
+            }else count --; //if the next value in the array is not equall to the element decrement count back.
         }
         return element;
     }
