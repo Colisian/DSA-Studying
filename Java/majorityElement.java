@@ -24,20 +24,21 @@ public class majorityElement {
  */
 class Solution1{
     public int majorityElement(int[] nums){
-        int n = nums.length;
-        HashMap<Integer, Integer> m = new HashMap<>();
+        int n = nums.length; //set nums length to a variable that can be initialized as an integer so that the it can be placed in the hashmap 
+        HashMap<Integer, Integer> m = new HashMap<>(); // create the hashmap, keys are the integers in the array and the values are the frequency that they appear
 
-        for (int i = 0; i < nums.length; i++) {
-            m.put(nums[i], m.getOrDefault(nums[i], 0) + 1);
+        for (int i = 0; i < nums.length; i++) { //loop through the hashmap
+            m.put(nums[i], m.getOrDefault(nums[i], 0) + 1); //for each value in the array put the value at the i instance as the key, 
+                                                                        //getOrDefault to either retrieve the current count or a default value of 0 if the key is not present and then increments the count by 1.
         }
-        n = n/2;
-        for (Map.Entry<Integer,Integer> entry : m.entrySet()) {
-            if(entry.getValue() > n){
-                return entry.getKey();
+        n = n/2; //threshold value, majority element shows up n/2 times
+        for (Map.Entry<Integer,Integer> entry : m.entrySet()) { //iterates through hashmap series
+            if(entry.getValue() > n){ //if the frequency of that element is greater than the threshold value
+                return entry.getKey(); //return that value
             }
             
         }
-return 0;
+return 0; //if not return 0
     }
 }
 
