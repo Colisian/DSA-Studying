@@ -14,9 +14,9 @@ import java.util.Map;
 public class majorityElement {
 
     public int majorityElement(int[] nums) {
-        Arrays.sort(nums);
-        int n = nums.length;
-        return nums [n/2];
+        Arrays.sort(nums); //Sort array
+        int n = nums.length; //set n to be the length of nums to calculate the threshold value 
+        return nums[n/2]; //if the array is sorted in order the value that is at the halfway mark should be the majority element.
     }
 }
 /*
@@ -24,7 +24,7 @@ public class majorityElement {
  */
 class Solution1{
     public int majorityElement(int[] nums){
-        int n = nums.length; //set nums length to a variable that can be initialized as an integer so that the it can be placed in the hashmap 
+        int n = nums.length; //set nums length to a variable that can be initialized as an integer so that the threshold can be calculated 
         HashMap<Integer, Integer> m = new HashMap<>(); // create the hashmap, keys are the integers in the array and the values are the frequency that they appear
 
         for (int i = 0; i < nums.length; i++) { //loop through the hashmap
