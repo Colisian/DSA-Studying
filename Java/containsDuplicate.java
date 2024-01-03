@@ -51,11 +51,10 @@ class Solution {
                     return true;
                     
                 }
-                map.put(nums[i], 1); //Otherwise store each unique value in the hashmap with the as a key which and a value of 1
+                map.put(nums[i], 1); //Otherwise store each unique value in the hashmap with the as a key which and a value of 1. Keys added in HashMaps must be unique
             }
             return false;
         }
-         
  }
  /* for an example array like [3,2,3,1]
   First iteration 

@@ -19,7 +19,19 @@ package Java;
  * 
  */
 
-class removeDuplicate {
+public class removeDuplicate {
 
+    public int removeDuplicates(int[] nums) {
+            //Use i and j indices to iterate through array and 
+        int j = 1; //First element in array is always considered unique so we start the check at the first index
+        for (int i = 1; i < nums.length; i++) { // increment the array 
+            if (nums[i] != nums[i - 1]) { //if the number previous is not current to the number at i then it is unique (first loop is comparing nums[i] to nums[0])
+                nums[j] = nums[i]; //update the unique number at i to be the number at j
+                j++; //increment j by one to be the next comparison value
+            }
+            
+        }
+        return j; //if the number is not unique, or a duplicate, then return j
+    }
     
 }
